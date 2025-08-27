@@ -49,7 +49,7 @@ streamlit run app.py
 
 
 ## 🧩 Puzzle Matrix
-###Fragment Collection
+### Fragment Collection
 1. Solve 8 cryptographic puzzles to collect fragments:
 2. Sound Ghost - Identify the canyon's answer
 3. Triangular Sequence - Decipher the numeric pattern
@@ -94,16 +94,7 @@ Assemble into Master Key
 
 ## 🔧 Technical Architecture
 
-psyche-cyber-quest/ 
-├── app.py              # Main application driver 
-├── puzzles.py          # Puzzle definitions & validators 
-├── llm.py              # AI/Persona response system 
-├── ui.py               # Interface rendering components 
-├── components/         # UI & visual experience modules 
-│ ├── styles.py         # Cyberpunk CSS and themes 
-│ ├── matrix.py         # Matrix rain background effect 
-│ └── games.py          # Mini-game implementations 
-└── requirements.txt    # Dependencies 
+<img width="503" height="265" alt="image" src="https://github.com/user-attachments/assets/f4afc738-41ae-46bd-a3f3-9d86ed1919fa" />
 
 ## 🚀 Deployment
 ### Local Development
@@ -146,6 +137,7 @@ Created by Mayank Kumar - Keeper of the Neon Mainframe, for the GDG Retro Projec
 [Demo Video link = https://youtu.be/EKkquM3WAeE]
 
 > *"The grid welcomes those who dare to solve its mysteries..."*
+
 
 
 
