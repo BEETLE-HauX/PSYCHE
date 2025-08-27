@@ -76,7 +76,7 @@ Assemble into Master Key
 4. Use hint when the digital static overwhelms you
 5. Play mini-games when they appear in the sequence
 6. Collect all fragments - watch your inventory grow
-7. Assemble the Master Key - final format: ** ** ****
+7. Assemble the Master Key
 8. Claim your reward - type secret after unlocking everything
 
 ## 🕹️ Mini-Game Instructions
@@ -136,6 +136,7 @@ Created by Mayank Kumar - Keeper of the Neon Mainframe, for the GDG Retro Projec
 [Demo Video link = https://youtu.be/EKkquM3WAeE]
 
 > *"The grid welcomes those who dare to solve its mysteries..."*
+
 
 
 
