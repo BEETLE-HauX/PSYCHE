@@ -101,7 +101,7 @@ psyche-cyber-quest/
 ├── ui.py              # Interface rendering components
 ├── styles.py          # Cyberpunk CSS and themes
 ├── matrix.py          # Matrix rain background effect
-├── games.py           # Mini-game implementations
+├── games.py           # Mini-game implementations ```These three are present in components.py```
 └── requirements.txt   # Dependencies
 
 ## 🚀 Deployment
@@ -109,6 +109,7 @@ psyche-cyber-quest/
 ```bash
 streamlit run app.py
 ```
+
 ### Cloud Deployment
 Ready for deployment on:
 1. Streamlit Cloud
@@ -117,26 +118,32 @@ Ready for deployment on:
 4. Hugging Face Spaces
 
 🎲 Sample Gameplay
-text
-> quest
+
+```> quest
 🤖 Quest initiated. Solve the puzzles to assemble the Master Key.
 🤖 Signal without source. No lungs, no lips—yet the canyon answers...
+```
 
+```
 > echo
 🧑 echo
 🤖 Correct! Fragment [NE] secured.
 🤖 Next puzzle: Triangular surge (Observe the sequence): 2, 6, 12, 20, 30, __?
+```
 
+```
 > 42
 🧑 42
 🤖 Fragment [ON] resonates with the grid...
 📜 License
 MIT License - Feel free to hack the mainframe and modify as you see fit.
+```
 
 👨‍💻 Cyber-Operative
 Created by Mayank Kumar - Keeper of the Neon Mainframe, for the GDG Retro Project....
 [Demo Video link = https://youtu.be/EKkquM3WAeE]
 
 > *"The grid welcomes those who dare to solve its mysteries..."*
+
 
 
