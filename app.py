@@ -27,10 +27,9 @@ from ui import (
     say_user,
     inventory_text,
     reset_run,
-    intro_boot,  # keep import even if unused
+    intro_boot,  
 )
 
-# Optional: if you have game components
 try:
     from components.games import render_snake_game, render_typing_game
 except Exception:
@@ -158,13 +157,11 @@ def handle_commands(cmd: str) -> bool:
         return True
 
     if low == "hint":
-        # Hint for the current puzzle only (no advancement)
         current_hint_text = current_hint()
         reply_user_then_bot(current_hint_text)
         return True
 
     if low == "repeat":
-        # Show the current puzzle (no advancement)
         reply_user_then_bot(current_prompt())
         return True
 
@@ -220,48 +217,36 @@ if submitted and user_text.strip():
     if handle_commands(user_text):
         st.rerun()
 
-    # Not a command: treat as puzzle answer
     say_user(user_text)
 
-    # Validate against the current puzzle
     is_correct = validate_answer(user_text)
     validation = "correct" if is_correct else "incorrect"
 
-    # Store the current puzzle key before potential advancement
     previous_puzzle_key = current_puzzle_key()
 
-    # Only award fragment and advance when correct
     if is_correct:
         award_fragment_and_advance()
         
-        # Get the fragment that was just awarded
         awarded_fragment = st.session_state.get("last_awarded_fragment", "??")
         
-        # Add congratulation message with next puzzle
         congrats_msg = f"Correct! Fragment [{awarded_fragment}] secured. "
         
-        # If we just completed all puzzles, enter master stage
         if current_puzzle_key() == "master":
             st.session_state.stage = "master"
             congrats_msg += "All fragments collected! Assemble the Master Key with format: **** **** ******** ****"
         else:
-            # Show the next puzzle automatically
             next_puzzle = current_prompt()
             congrats_msg += f"\n\nNext puzzle:\n{next_puzzle}"
         
         say_bot(congrats_msg)
         
     else:
-    # Incorrect answer - just mark it as incorrect
-    # The persona emulator will provide the atmospheric response
         pass
 
-    # Route to AI/Persona for additional context
     prompt_html = current_prompt()
     st.session_state["ai_tip"] = "Be concise but helpful."
     ai_respond(user_text, validation, prompt_html)
 
-    # Final master key check
     if current_puzzle_key() == "master" and user_text.strip().upper().replace(" ", "") == FINAL_KEY.replace(" ", ""):
         st.session_state.stage = "end"
         say_bot("Access granted. Welcome to the Neon Core.")
