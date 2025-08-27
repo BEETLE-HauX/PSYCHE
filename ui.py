@@ -66,8 +66,7 @@ def inject_global_styles():
 
 def render_matrix_layers():
     """Render matrix rain and scanlines overlay."""
-    render_matrix_rain()  # This will render the actual Matrix effect
-    # Fallback static overlay
+    render_matrix_rain() 
     st.markdown(MATRIX_CANVAS, unsafe_allow_html=True)
 
 def render_header():
