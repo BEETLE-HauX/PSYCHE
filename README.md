@@ -30,12 +30,11 @@ pip install -r requirements.txt
 # Optional: AI Integration
 # For enhanced cybernetic responses, set up Groq AI:
 ```
-
 ```bash
 # Create .env file
 echo "GROQ_API_KEY=your_api_key_here" > .env
-# Note: The system works perfectly without AI - uses built-in persona emulator
 ```
+
 ## Launch Sequence
 ```bash
 streamlit run app.py
@@ -137,6 +136,7 @@ Created by Mayank Kumar - Keeper of the Neon Mainframe, for the GDG Retro Projec
 [Demo Video link = https://youtu.be/EKkquM3WAeE]
 
 > *"The grid welcomes those who dare to solve its mysteries..."*
+
 
 
 
