@@ -119,11 +119,8 @@ def render_matrix_rain():
     </html>
     """
     
-    # Use components to render HTML with JavaScript execution
-    # Set height to 0 and use scrolling=False to minimize iframe constraints
     st.components.v1.html(matrix_html, height=0, scrolling=False)
 
-# Keep the original constant for backward compatibility
 MATRIX_CANVAS = """
 <div style="position: fixed; inset: 0; z-index: -1; background: #050709; pointer-events: none;"></div>
 """
