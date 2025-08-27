@@ -147,8 +147,7 @@ def ai_respond(user_input: str, validation: str | None, current_prompt_html: str
             return
         except Exception as e:
             st.session_state["ai_diag"]["invoke_error"] = str(e)
-            # fall through to persona emulator
-
+          
     st.session_state.chat.append(
         ("bot", _persona_emulator_response(user_input, validation))
     )
