@@ -123,13 +123,11 @@ def current_hint() -> str:
     return puzzle["hint"]
 
 def validate_answer(user_text: str):
-    # Get the CURRENT puzzle key at validation time
     key = current_puzzle_key()
     if key == "master":
         attempt = user_text.strip().upper().replace(" ", "")
         return attempt == FINAL_KEY.replace(" ", "")
     
-    # Find the current puzzle
     current_puzzle = next((p for p in PUZZLES if p["key"] == key), None)
     if not current_puzzle:
         return False
@@ -146,10 +144,8 @@ def award_fragment_and_advance():
         st.session_state.fragments.append(frag)
         st.session_state.inventory_order.append(frag)
         
-        # Store the fragment we just awarded for the congratulation message
         st.session_state.last_awarded_fragment = frag
         
-        # Advance to next puzzle
         st.session_state.puzzle_index += 1
     
     # Auto-close mini-game panel if leaving a game stage
