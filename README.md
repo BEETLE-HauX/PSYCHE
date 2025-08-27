@@ -94,15 +94,16 @@ Assemble into Master Key
 
 ## 🔧 Technical Architecture
 
-psyche-cyber-quest/
-├── app.py              # Main application driver
-├── puzzles.py          # Puzzle definitions & validators
-├── llm.py             # AI/Persona response system
-├── ui.py              # Interface rendering components
-├── styles.py          # Cyberpunk CSS and themes
-├── matrix.py          # Matrix rain background effect
-├── games.py           # Mini-game implementations ```These three are present in components.py```
-└── requirements.txt   # Dependencies
+psyche-cyber-quest/ 
+├── app.py              # Main application driver 
+├── puzzles.py          # Puzzle definitions & validators 
+├── llm.py              # AI/Persona response system 
+├── ui.py               # Interface rendering components 
+├── components/         # UI & visual experience modules 
+│ ├── styles.py         # Cyberpunk CSS and themes 
+│ ├── matrix.py         # Matrix rain background effect 
+│ └── games.py          # Mini-game implementations 
+└── requirements.txt    # Dependencies 
 
 ## 🚀 Deployment
 ### Local Development
@@ -117,7 +118,7 @@ Ready for deployment on:
 3. Railway
 4. Hugging Face Spaces
 
-🎲 Sample Gameplay
+## 🎲 Sample Gameplay
 
 ```> quest
 🤖 Quest initiated. Solve the puzzles to assemble the Master Key.
@@ -139,11 +140,13 @@ Ready for deployment on:
 MIT License - Feel free to hack the mainframe and modify as you see fit.
 ```
 
-👨‍💻 Cyber-Operative
+## 👨‍💻 Cyber-Operative
 Created by Mayank Kumar - Keeper of the Neon Mainframe, for the GDG Retro Project....
+
 [Demo Video link = https://youtu.be/EKkquM3WAeE]
 
 > *"The grid welcomes those who dare to solve its mysteries..."*
+
 
 
 
